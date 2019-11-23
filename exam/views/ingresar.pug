@@ -1,0 +1,45 @@
+html   
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title ingresar
+    link(rel='stylesheet', href='/css/styleIngresar.css', type='text/css')
+  // HEADER
+section
+  .header
+    .navigation.w-nav(data-collapse='medium' data-animatio='default' data-duration='400')
+      .navigation-wrap
+        .menu
+          nav.navigation-items.w-nav-menu(role='navigation')
+            a.navigation-item.w-nav-link(href='/')
+              strong inicio
+            a.navigation-item.w-nav-link(href='/ingresar')
+              strong ingresar
+            a.navigation-item.w-nav-link(href='/buscar')
+              strong buscar
+            a.navigation-item.w-nav-link(href='/eliminar')
+              strong eliminar
+            a.navigation-item.w-nav-link(href='/actualizar')
+              strong actualizar
+// FORMULARIO
+section
+  h2 INGRESAR INFORMACION
+  .container
+    .formulario
+      label#modelo.label Modelo:
+      input.text-field.w-input.cod(type='text' maxlength='256')
+      label#marca.label Marca:
+      input.text-field.w-input.cod(type='text' maxlength='256')
+      label#combustible.label Tipo de combustible:
+      input.text-field.w-input(type='text' maxlength='256')
+      label#auto.label Tipo de auto:
+      input.text-field.w-input(type='text' maxlength='256')
+      label.label(id='transmisión') Tipo de transmisi&oacute;n:
+      input.text-field.w-input(type='text' maxlength='256')
+      label#anio.label A&ntilde;o:
+      input.text-field.w-input(type='text' maxlength='256')
+      input.btn-guardar(type='submit' value='GUARDAR')
+    .foto
+section.footer
+  p Photo by Alex Read on Unsplash
